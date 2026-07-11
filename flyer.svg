@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1131" width="800" height="1131" role="img" aria-label="BUZZ Festival Flyer">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0033"/>
+      <stop offset="50%" stop-color="#3a0075"/>
+      <stop offset="100%" stop-color="#ff3ea5"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD400"/>
+      <stop offset="50%" stop-color="#FF7A00"/>
+      <stop offset="100%" stop-color="#FF3EA5"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E0D5"/>
+      <stop offset="100%" stop-color="#7A5CFF"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD400"/>
+      <stop offset="70%" stop-color="#FF7A00"/>
+      <stop offset="100%" stop-color="#FF3EA5"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1131" fill="url(#bg)"/>
+
+  <!-- Soft glowing blobs -->
+  <circle cx="120" cy="120" r="180" fill="#7A5CFF" opacity="0.6" filter="url(#glow)"/>
+  <circle cx="700" cy="200" r="150" fill="#00E0D5" opacity="0.5" filter="url(#glow)"/>
+  <circle cx="750" cy="950" r="220" fill="#FF3EA5" opacity="0.6" filter="url(#glow)"/>
+  <circle cx="80" cy="900" r="180" fill="#FFD400" opacity="0.4" filter="url(#glow)"/>
+
+  <!-- Sun / big sound source -->
+  <circle cx="400" cy="480" r="230" fill="url(#sun)" opacity="0.9"/>
+  <circle cx="400" cy="480" r="260" fill="none" stroke="#FFD400" stroke-width="3" stroke-dasharray="6 10" opacity="0.8"/>
+  <circle cx="400" cy="480" r="300" fill="none" stroke="#00E0D5" stroke-width="2" stroke-dasharray="2 8" opacity="0.6"/>
+
+  <!-- Top brand mark -->
+  <g transform="translate(400 90)" text-anchor="middle" font-family="Verdana, 'Trebuchet MS', sans-serif">
+    <text y="0" font-size="22" font-weight="700" fill="#FFD400" letter-spacing="12">PRESENTED BY BUZZ</text>
+  </g>
+
+  <!-- Title BUZZ -->
+  <g font-family="Verdana, 'Trebuchet MS', sans-serif" font-weight="900" text-anchor="middle">
+    <text x="400" y="360" font-size="180" fill="url(#title)" letter-spacing="6" transform="rotate(-2 400 340)">BUZZ</text>
+    <text x="400" y="480" font-size="60" fill="#ffffff" letter-spacing="16" font-weight="800">FESTIVAL</text>
+  </g>
+
+  <!-- Sparkle stars -->
+  <g fill="#FFD400">
+    <path d="M180 260 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6z"/>
+    <path d="M640 320 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5z"/>
+    <path d="M120 520 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4z"/>
+    <path d="M680 700 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6z"/>
+  </g>
+
+  <!-- Underline swoosh -->
+  <path d="M180 540 Q 400 590 620 530" stroke="#00E0D5" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+  <!-- Info card -->
+  <g transform="translate(80 620)">
+    <rect x="0" y="0" width="640" height="380" rx="30" fill="#ffffff" opacity="0.08"/>
+    <rect x="0" y="0" width="640" height="380" rx="30" fill="none" stroke="#FFD400" stroke-width="2" stroke-dasharray="8 8"/>
+
+    <!-- Date -->
+    <g font-family="Verdana, 'Trebuchet MS', sans-serif" fill="#ffffff">
+      <text x="60" y="80" font-size="26" font-weight="700" letter-spacing="4" fill="#00E0D5">DATUM</text>
+      <text x="60" y="130" font-size="42" font-weight="900">15 &#8211; 17 AUG 2026</text>
+
+      <text x="60" y="200" font-size="26" font-weight="700" letter-spacing="4" fill="#00E0D5">ORT</text>
+      <text x="60" y="250" font-size="42" font-weight="900">Stadtpark Open Air</text>
+
+      <text x="60" y="320" font-size="22" font-weight="700" letter-spacing="4" fill="#00E0D5">TICKETS AB 39 &#8364;</text>
+      <text x="60" y="356" font-size="20" font-weight="600" opacity="0.85">buzz-festival.com</text>
+    </g>
+
+    <!-- Ticket icon corner -->
+    <g transform="translate(510 90)">
+      <rect x="0" y="0" width="90" height="150" rx="14" fill="#FF3EA5"/>
+      <circle cx="0" cy="75" r="8" fill="url(#bg)"/>
+      <circle cx="90" cy="75" r="8" fill="url(#bg)"/>
+      <line x1="20" y1="30" x2="70" y2="30" stroke="#FFD400" stroke-width="3"/>
+      <line x1="20" y1="50" x2="70" y2="50" stroke="#FFD400" stroke-width="2"/>
+      <text x="45" y="115" text-anchor="middle" font-family="Verdana" font-size="30" font-weight="900" fill="#fff">3</text>
+      <text x="45" y="140" text-anchor="middle" font-family="Verdana" font-size="11" font-weight="700" fill="#fff" letter-spacing="1">DAYS</text>
+    </g>
+  </g>
+
+  <!-- Line-up -->
+  <g transform="translate(400 1040)" text-anchor="middle" font-family="Verdana, 'Trebuchet MS', sans-serif" fill="#ffffff">
+    <text y="0" font-size="18" font-weight="800" letter-spacing="6" fill="#FFD400">LINE-UP</text>
+    <text y="35" font-size="20" font-weight="700" letter-spacing="2">NOVA WAVE &#183; LUNA KID &#183; HONEY BEATS</text>
+    <text y="65" font-size="16" font-weight="600" letter-spacing="2" opacity="0.8">&amp; MANY MORE</text>
+  </g>
+
+  <!-- Small sound waves in corners -->
+  <g stroke="url(#cyan)" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M50 1080 Q 65 1060 80 1080 T 110 1080"/>
+    <path d="M690 1080 Q 705 1060 720 1080 T 750 1080"/>
+  </g>
+</svg>

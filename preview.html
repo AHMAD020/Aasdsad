@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUZZ – Logo & Flyer Vorschau</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a0033, #3a0075 60%, #ff3ea5);
+            color: white;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            margin: 0 0 10px;
+            background: linear-gradient(90deg, #FFD400, #FF7A00, #FF3EA5);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.02em;
+        }
+        header p { opacity: 0.85; margin: 0; }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        @media (min-width: 900px) {
+            .grid { grid-template-columns: 1fr 1fr; align-items: start; }
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 212, 0, 0.35);
+            border-radius: 20px;
+            padding: 24px;
+            backdrop-filter: blur(10px);
+        }
+        .card h2 {
+            margin: 0 0 8px;
+            font-size: 1.3rem;
+            color: #FFD400;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        .card .desc { margin: 0 0 20px; opacity: 0.8; font-size: 0.95rem; }
+        .frame {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+        }
+        .frame.dark { background: #14002a; }
+        .frame svg, .frame img { width: 100%; height: auto; display: block; }
+        .actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 14px;
+            border: 2px solid transparent;
+            transition: transform .15s;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-primary { background: #FFD400; color: #14002a; }
+        .btn-ghost { border-color: #00E0D5; color: #00E0D5; }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BUZZ – Logo &amp; Festival Flyer</h1>
+        <p>Bunte, verspielte Marken-Vorschau · SVG-Vektorgrafik</p>
+    </header>
+
+    <section class="grid">
+        <div class="card">
+            <h2>Logo</h2>
+            <p class="desc">Wortmarke „BUZZ" mit Verlauf, Sound-Wellen und kleinen Bienen-Punkten.</p>
+            <div class="frame">
+                <object data="logo.svg" type="image/svg+xml" aria-label="BUZZ Logo"></object>
+            </div>
+            <div class="actions">
+                <a class="btn btn-primary" href="logo.svg" download>SVG herunterladen</a>
+                <a class="btn btn-ghost" href="logo.svg" target="_blank">In neuem Tab öffnen</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Festival Flyer</h2>
+            <p class="desc">A4-Format (portrait) · 15–17 AUG 2026 · Stadtpark Open Air · Line-up-Platzhalter.</p>
+            <div class="frame dark">
+                <object data="flyer.svg" type="image/svg+xml" aria-label="BUZZ Festival Flyer"></object>
+            </div>
+            <div class="actions">
+                <a class="btn btn-primary" href="flyer.svg" download>SVG herunterladen</a>
+                <a class="btn btn-ghost" href="flyer.svg" target="_blank">In neuem Tab öffnen</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Alle Texte, Farben und Formen sind im SVG direkt editierbar.</p>
+    </footer>
+</body>
+</html>

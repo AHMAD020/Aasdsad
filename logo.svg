@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" role="img" aria-label="BUZZ Logo">
+  <defs>
+    <linearGradient id="letterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3EA5"/>
+      <stop offset="50%" stop-color="#FF7A00"/>
+      <stop offset="100%" stop-color="#FFD400"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E0D5"/>
+      <stop offset="100%" stop-color="#7A5CFF"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Playful background blobs -->
+  <circle cx="90" cy="80" r="55" fill="#FFD400" opacity="0.35" filter="url(#soft)"/>
+  <circle cx="520" cy="230" r="70" fill="#7A5CFF" opacity="0.35" filter="url(#soft)"/>
+  <circle cx="500" cy="70" r="30" fill="#00E0D5" opacity="0.6" filter="url(#soft)"/>
+
+  <!-- Sound-wave accents (the "buzz") -->
+  <g stroke="url(#accentGrad)" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M40 150 Q 55 130 70 150 T 100 150"/>
+    <path d="M500 150 Q 515 130 530 150 T 560 150"/>
+  </g>
+
+  <!-- Word mark: BUZZ -->
+  <g font-family="Verdana, 'Trebuchet MS', sans-serif" font-weight="900" font-size="150" fill="url(#letterGrad)" text-anchor="middle">
+    <text x="300" y="200" letter-spacing="6" transform="rotate(-2 300 180)">BUZZ</text>
+  </g>
+
+  <!-- Little bee dots above the U -->
+  <g fill="#111">
+    <circle cx="235" cy="90" r="4"/>
+    <circle cx="255" cy="82" r="3"/>
+    <circle cx="275" cy="88" r="4"/>
+  </g>
+
+  <!-- Underline swoosh -->
+  <path d="M170 235 Q 300 265 430 230" stroke="#FF3EA5" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+  <!-- Star sparkles -->
+  <g fill="#FFD400">
+    <path d="M140 60 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/>
+    <path d="M470 250 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/>
+    <path d="M60 230 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/>
+  </g>
+</svg>
