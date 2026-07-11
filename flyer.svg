@@ -1,104 +1,204 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1131" width="800" height="1131" role="img" aria-label="BUZZ Festival Flyer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1131" width="800" height="1131" role="img" aria-label="BUZZ Festival Flyer – FELFOUL Foodtruck">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#1a0033"/>
-      <stop offset="50%" stop-color="#3a0075"/>
+      <stop offset="50%" stop-color="#5c1a75"/>
       <stop offset="100%" stop-color="#ff3ea5"/>
     </linearGradient>
-    <linearGradient id="title" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFD400"/>
       <stop offset="50%" stop-color="#FF7A00"/>
       <stop offset="100%" stop-color="#FF3EA5"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E63946"/>
+      <stop offset="100%" stop-color="#B02434"/>
+    </linearGradient>
+    <linearGradient id="falafel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#B37A2E"/>
+      <stop offset="100%" stop-color="#7A4A15"/>
     </linearGradient>
     <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00E0D5"/>
       <stop offset="100%" stop-color="#7A5CFF"/>
     </linearGradient>
+    <linearGradient id="slush" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF3EA5"/>
+      <stop offset="60%" stop-color="#7A5CFF"/>
+      <stop offset="100%" stop-color="#00E0D5"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7ED957"/>
+      <stop offset="100%" stop-color="#2E7A3A"/>
+    </linearGradient>
     <filter id="glow">
       <feGaussianBlur stdDeviation="18"/>
     </filter>
-    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FFD400"/>
-      <stop offset="70%" stop-color="#FF7A00"/>
-      <stop offset="100%" stop-color="#FF3EA5"/>
-    </radialGradient>
   </defs>
 
   <!-- Background -->
   <rect width="800" height="1131" fill="url(#bg)"/>
-
-  <!-- Soft glowing blobs -->
   <circle cx="120" cy="120" r="180" fill="#7A5CFF" opacity="0.6" filter="url(#glow)"/>
   <circle cx="700" cy="200" r="150" fill="#00E0D5" opacity="0.5" filter="url(#glow)"/>
-  <circle cx="750" cy="950" r="220" fill="#FF3EA5" opacity="0.6" filter="url(#glow)"/>
+  <circle cx="750" cy="950" r="220" fill="#FF3EA5" opacity="0.55" filter="url(#glow)"/>
   <circle cx="80" cy="900" r="180" fill="#FFD400" opacity="0.4" filter="url(#glow)"/>
 
-  <!-- Sun / big sound source -->
-  <circle cx="400" cy="480" r="230" fill="url(#sun)" opacity="0.9"/>
-  <circle cx="400" cy="480" r="260" fill="none" stroke="#FFD400" stroke-width="3" stroke-dasharray="6 10" opacity="0.8"/>
-  <circle cx="400" cy="480" r="300" fill="none" stroke="#00E0D5" stroke-width="2" stroke-dasharray="2 8" opacity="0.6"/>
-
-  <!-- Top brand mark -->
-  <g transform="translate(400 90)" text-anchor="middle" font-family="Verdana, 'Trebuchet MS', sans-serif">
-    <text y="0" font-size="22" font-weight="700" fill="#FFD400" letter-spacing="12">PRESENTED BY BUZZ</text>
+  <!-- Confetti dots -->
+  <g fill="#FFD400" opacity="0.9">
+    <circle cx="90" cy="380" r="5"/>
+    <circle cx="720" cy="480" r="6"/>
+    <circle cx="60" cy="620" r="4"/>
+    <circle cx="740" cy="720" r="5"/>
+  </g>
+  <g fill="#00E0D5" opacity="0.9">
+    <circle cx="200" cy="60" r="4"/>
+    <circle cx="600" cy="60" r="5"/>
+    <circle cx="150" cy="1080" r="5"/>
   </g>
 
-  <!-- Title BUZZ -->
+  <!-- Top brand line -->
+  <g transform="translate(400 70)" text-anchor="middle" font-family="Verdana, 'Trebuchet MS', sans-serif">
+    <text y="0" font-size="20" font-weight="700" fill="#FFD400" letter-spacing="10">15 &#8211; 17 AUGUST 2026</text>
+    <text y="30" font-size="14" font-weight="600" fill="#ffffff" letter-spacing="6" opacity="0.85">STADTPARK OPEN AIR</text>
+  </g>
+
+  <!-- BUZZ FESTIVAL title -->
   <g font-family="Verdana, 'Trebuchet MS', sans-serif" font-weight="900" text-anchor="middle">
-    <text x="400" y="360" font-size="180" fill="url(#title)" letter-spacing="6" transform="rotate(-2 400 340)">BUZZ</text>
-    <text x="400" y="480" font-size="60" fill="#ffffff" letter-spacing="16" font-weight="800">FESTIVAL</text>
-  </g>
-
-  <!-- Sparkle stars -->
-  <g fill="#FFD400">
-    <path d="M180 260 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6z"/>
-    <path d="M640 320 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5z"/>
-    <path d="M120 520 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4z"/>
-    <path d="M680 700 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6z"/>
+    <text x="400" y="230" font-size="150" fill="url(#titleGrad)" letter-spacing="6" transform="rotate(-2 400 210)">BUZZ</text>
+    <text x="400" y="300" font-size="48" fill="#ffffff" letter-spacing="14" font-weight="800">FESTIVAL</text>
   </g>
 
   <!-- Underline swoosh -->
-  <path d="M180 540 Q 400 590 620 530" stroke="#00E0D5" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <path d="M180 335 Q 400 375 620 325" stroke="#00E0D5" stroke-width="8" stroke-linecap="round" fill="none"/>
 
-  <!-- Info card -->
-  <g transform="translate(80 620)">
-    <rect x="0" y="0" width="640" height="380" rx="30" fill="#ffffff" opacity="0.08"/>
-    <rect x="0" y="0" width="640" height="380" rx="30" fill="none" stroke="#FFD400" stroke-width="2" stroke-dasharray="8 8"/>
+  <!-- FELFOUL foodtruck banner -->
+  <g transform="translate(400 400)" text-anchor="middle">
+    <rect x="-280" y="-30" width="560" height="60" rx="30" fill="url(#ribbon)" stroke="#FFD400" stroke-width="3"/>
+    <text y="10" font-family="'Impact','Arial Black',sans-serif" font-size="38" font-weight="900" fill="#fff" letter-spacing="6">FELFOUL FOODTRUCK LIVE</text>
+  </g>
 
-    <!-- Date -->
-    <g font-family="Verdana, 'Trebuchet MS', sans-serif" fill="#ffffff">
-      <text x="60" y="80" font-size="26" font-weight="700" letter-spacing="4" fill="#00E0D5">DATUM</text>
-      <text x="60" y="130" font-size="42" font-weight="900">15 &#8211; 17 AUG 2026</text>
+  <!-- Menu title -->
+  <g transform="translate(400 480)" text-anchor="middle" font-family="Verdana, sans-serif">
+    <text y="0" font-size="18" font-weight="800" letter-spacing="8" fill="#FFD400">AUF DEM FESTIVAL</text>
+    <text y="30" font-size="14" font-weight="600" letter-spacing="4" fill="#ffffff" opacity="0.85">HAUSGEMACHT &#183; FRISCH &#183; LECKER</text>
+  </g>
 
-      <text x="60" y="200" font-size="26" font-weight="700" letter-spacing="4" fill="#00E0D5">ORT</text>
-      <text x="60" y="250" font-size="42" font-weight="900">Stadtpark Open Air</text>
+  <!-- Menu cards row -->
+  <!-- Falafel -->
+  <g transform="translate(90 540)">
+    <rect x="0" y="0" width="200" height="240" rx="24" fill="#ffffff"/>
+    <rect x="0" y="0" width="200" height="240" rx="24" fill="none" stroke="#FFD400" stroke-width="4"/>
+    <!-- Falafel illustration -->
+    <g transform="translate(100 90)">
+      <ellipse cx="0" cy="30" rx="55" ry="10" fill="#111" opacity="0.15"/>
+      <circle cx="-25" cy="0" r="24" fill="url(#falafel)" stroke="#111" stroke-width="2"/>
+      <circle cx="25" cy="5" r="22" fill="url(#falafel)" stroke="#111" stroke-width="2"/>
+      <circle cx="0" cy="-15" r="22" fill="url(#falafel)" stroke="#111" stroke-width="2"/>
+      <g fill="#8A5A20" opacity="0.7">
+        <circle cx="-32" cy="-6" r="3"/>
+        <circle cx="-18" cy="8" r="3"/>
+        <circle cx="18" cy="-2" r="3"/>
+        <circle cx="30" cy="10" r="3"/>
+        <circle cx="-4" cy="-22" r="3"/>
+        <circle cx="6" cy="-8" r="3"/>
+      </g>
+      <!-- parsley -->
+      <ellipse cx="-40" cy="-8" rx="8" ry="4" fill="url(#green)" transform="rotate(-30 -40 -8)"/>
+      <ellipse cx="40" cy="-10" rx="8" ry="4" fill="url(#green)" transform="rotate(30 40 -10)"/>
+    </g>
+    <text x="100" y="180" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="30" font-weight="900" fill="#E63946" letter-spacing="2">FALAFEL</text>
+    <text x="100" y="210" text-anchor="middle" font-family="Verdana" font-size="13" font-weight="600" fill="#333">hausgemacht &amp; knusprig</text>
+  </g>
 
-      <text x="60" y="320" font-size="22" font-weight="700" letter-spacing="4" fill="#00E0D5">TICKETS AB 39 &#8364;</text>
-      <text x="60" y="356" font-size="20" font-weight="600" opacity="0.85">buzz-festival.com</text>
+  <!-- Dolma -->
+  <g transform="translate(300 540)">
+    <rect x="0" y="0" width="200" height="240" rx="24" fill="#ffffff"/>
+    <rect x="0" y="0" width="200" height="240" rx="24" fill="none" stroke="#7ED957" stroke-width="4"/>
+    <!-- Dolma illustration: wrapped leaves -->
+    <g transform="translate(100 90)">
+      <ellipse cx="0" cy="30" rx="55" ry="10" fill="#111" opacity="0.15"/>
+      <g stroke="#111" stroke-width="2">
+        <ellipse cx="-25" cy="5" rx="14" ry="26" fill="url(#green)" transform="rotate(-15 -25 5)"/>
+        <ellipse cx="0" cy="-5" rx="14" ry="28" fill="url(#green)"/>
+        <ellipse cx="25" cy="5" rx="14" ry="26" fill="url(#green)" transform="rotate(15 25 5)"/>
+      </g>
+      <!-- leaf veins -->
+      <g stroke="#245826" stroke-width="1.5" fill="none" opacity="0.7">
+        <path d="M-25 -18 L -25 25"/>
+        <path d="M0 -30 L 0 20"/>
+        <path d="M25 -18 L 25 25"/>
+      </g>
+      <!-- rice highlight -->
+      <g fill="#FFF6DE">
+        <circle cx="-25" cy="20" r="2"/>
+        <circle cx="0" cy="16" r="2"/>
+        <circle cx="25" cy="20" r="2"/>
+      </g>
+    </g>
+    <text x="100" y="180" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="30" font-weight="900" fill="#2E7A3A" letter-spacing="2">DOLMA</text>
+    <text x="100" y="210" text-anchor="middle" font-family="Verdana" font-size="13" font-weight="600" fill="#333">gefüllte Weinblätter</text>
+  </g>
+
+  <!-- Slush-Eis -->
+  <g transform="translate(510 540)">
+    <rect x="0" y="0" width="200" height="240" rx="24" fill="#ffffff"/>
+    <rect x="0" y="0" width="200" height="240" rx="24" fill="none" stroke="#00E0D5" stroke-width="4"/>
+    <!-- Slush cup -->
+    <g transform="translate(100 100)">
+      <ellipse cx="0" cy="40" rx="55" ry="8" fill="#111" opacity="0.15"/>
+      <!-- cup -->
+      <path d="M-35 -30 L -30 40 L 30 40 L 35 -30 Z" fill="#ffffff" stroke="#111" stroke-width="2.5"/>
+      <!-- slush -->
+      <path d="M-33 -30 Q -20 -45 0 -35 Q 20 -50 33 -30 Q 20 -20 0 -25 Q -20 -22 -33 -30 Z" fill="url(#slush)" stroke="#111" stroke-width="2"/>
+      <!-- straw -->
+      <rect x="-4" y="-70" width="8" height="80" fill="#FFD400" stroke="#111" stroke-width="2" transform="rotate(10 0 -30)"/>
+      <!-- ice sparkles -->
+      <g fill="#ffffff" opacity="0.9">
+        <circle cx="-12" cy="-10" r="2"/>
+        <circle cx="10" cy="0" r="2"/>
+        <circle cx="0" cy="15" r="2"/>
+      </g>
+    </g>
+    <text x="100" y="180" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="28" font-weight="900" fill="#7A5CFF" letter-spacing="2">SLUSH-EIS</text>
+    <text x="100" y="210" text-anchor="middle" font-family="Verdana" font-size="13" font-weight="600" fill="#333">eiskalt &amp; fruchtig</text>
+  </g>
+
+  <!-- Info panel -->
+  <g transform="translate(80 830)">
+    <rect x="0" y="0" width="640" height="200" rx="24" fill="#ffffff" opacity="0.1"/>
+    <rect x="0" y="0" width="640" height="200" rx="24" fill="none" stroke="#FFD400" stroke-width="2" stroke-dasharray="8 8"/>
+
+    <g font-family="Verdana, sans-serif" fill="#ffffff">
+      <text x="40" y="55" font-size="20" font-weight="800" letter-spacing="4" fill="#00E0D5">WO?</text>
+      <text x="40" y="90" font-size="24" font-weight="900">Stadtpark Open Air &#183; Food Court</text>
+
+      <text x="40" y="130" font-size="20" font-weight="800" letter-spacing="4" fill="#00E0D5">WANN?</text>
+      <text x="40" y="165" font-size="24" font-weight="900">15 &#8211; 17 AUG &#183; 12:00 &#8211; 23:00 UHR</text>
     </g>
 
-    <!-- Ticket icon corner -->
-    <g transform="translate(510 90)">
-      <rect x="0" y="0" width="90" height="150" rx="14" fill="#FF3EA5"/>
-      <circle cx="0" cy="75" r="8" fill="url(#bg)"/>
-      <circle cx="90" cy="75" r="8" fill="url(#bg)"/>
-      <line x1="20" y1="30" x2="70" y2="30" stroke="#FFD400" stroke-width="3"/>
-      <line x1="20" y1="50" x2="70" y2="50" stroke="#FFD400" stroke-width="2"/>
-      <text x="45" y="115" text-anchor="middle" font-family="Verdana" font-size="30" font-weight="900" fill="#fff">3</text>
-      <text x="45" y="140" text-anchor="middle" font-family="Verdana" font-size="11" font-weight="700" fill="#fff" letter-spacing="1">DAYS</text>
+    <!-- Price badge -->
+    <g transform="translate(520 100)">
+      <circle cx="0" cy="0" r="70" fill="#FFD400" stroke="#E63946" stroke-width="4"/>
+      <text x="0" y="-8" text-anchor="middle" font-family="'Impact', sans-serif" font-size="16" font-weight="900" fill="#E63946" letter-spacing="1">AB</text>
+      <text x="0" y="22" text-anchor="middle" font-family="'Impact', sans-serif" font-size="34" font-weight="900" fill="#E63946">3,50€</text>
     </g>
   </g>
 
-  <!-- Line-up -->
-  <g transform="translate(400 1040)" text-anchor="middle" font-family="Verdana, 'Trebuchet MS', sans-serif" fill="#ffffff">
-    <text y="0" font-size="18" font-weight="800" letter-spacing="6" fill="#FFD400">LINE-UP</text>
-    <text y="35" font-size="20" font-weight="700" letter-spacing="2">NOVA WAVE &#183; LUNA KID &#183; HONEY BEATS</text>
-    <text y="65" font-size="16" font-weight="600" letter-spacing="2" opacity="0.8">&amp; MANY MORE</text>
+  <!-- Bottom line -->
+  <g transform="translate(400 1080)" text-anchor="middle" font-family="Verdana, sans-serif" fill="#ffffff">
+    <text y="0" font-size="16" font-weight="800" letter-spacing="6" fill="#FFD400">FELFOUL &#183; FALAFEL &#183; ASCHAFFENBURG</text>
+    <text y="24" font-size="12" font-weight="600" letter-spacing="3" opacity="0.85">@felfoul63 &#183; Würzburger Str. 62</text>
   </g>
 
-  <!-- Small sound waves in corners -->
+  <!-- Corner sound waves -->
   <g stroke="url(#cyan)" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.9">
-    <path d="M50 1080 Q 65 1060 80 1080 T 110 1080"/>
-    <path d="M690 1080 Q 705 1060 720 1080 T 750 1080"/>
+    <path d="M50 1050 Q 65 1030 80 1050 T 110 1050"/>
+    <path d="M690 1050 Q 705 1030 720 1050 T 750 1050"/>
+  </g>
+
+  <!-- Star sparkles -->
+  <g fill="#FFD400">
+    <path d="M180 180 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6z"/>
+    <path d="M640 220 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5z"/>
   </g>
 </svg>

@@ -1,49 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" role="img" aria-label="BUZZ Logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="FELFOUL Falafel Logo">
   <defs>
-    <linearGradient id="letterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF3EA5"/>
-      <stop offset="50%" stop-color="#FF7A00"/>
-      <stop offset="100%" stop-color="#FFD400"/>
+    <radialGradient id="badgeBg" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#FFF6DE"/>
+      <stop offset="100%" stop-color="#F4D48A"/>
+    </radialGradient>
+    <linearGradient id="ribbon" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E63946"/>
+      <stop offset="100%" stop-color="#B02434"/>
     </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00E0D5"/>
-      <stop offset="100%" stop-color="#7A5CFF"/>
+    <linearGradient id="flame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#FFD400"/>
+      <stop offset="60%" stop-color="#FF7A00"/>
+      <stop offset="100%" stop-color="#E63946"/>
     </linearGradient>
-    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8"/>
-    </filter>
+    <linearGradient id="falafel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#B37A2E"/>
+      <stop offset="100%" stop-color="#7A4A15"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7ED957"/>
+      <stop offset="100%" stop-color="#3EA050"/>
+    </linearGradient>
   </defs>
 
-  <!-- Playful background blobs -->
-  <circle cx="90" cy="80" r="55" fill="#FFD400" opacity="0.35" filter="url(#soft)"/>
-  <circle cx="520" cy="230" r="70" fill="#7A5CFF" opacity="0.35" filter="url(#soft)"/>
-  <circle cx="500" cy="70" r="30" fill="#00E0D5" opacity="0.6" filter="url(#soft)"/>
+  <!-- Outer decorative ring -->
+  <circle cx="300" cy="300" r="285" fill="#111"/>
+  <circle cx="300" cy="300" r="270" fill="url(#flame)"/>
+  <circle cx="300" cy="300" r="252" fill="#111"/>
 
-  <!-- Sound-wave accents (the "buzz") -->
-  <g stroke="url(#accentGrad)" stroke-width="6" stroke-linecap="round" fill="none">
-    <path d="M40 150 Q 55 130 70 150 T 100 150"/>
-    <path d="M500 150 Q 515 130 530 150 T 560 150"/>
+  <!-- Main badge -->
+  <ellipse cx="300" cy="290" rx="230" ry="220" fill="url(#badgeBg)"/>
+  <ellipse cx="300" cy="290" rx="230" ry="220" fill="none" stroke="#E63946" stroke-width="6"/>
+
+  <!-- Top arch text: FALAFEL -->
+  <path id="topArc" d="M 100 300 A 200 200 0 0 1 500 300" fill="none"/>
+  <text font-family="'Impact', 'Arial Black', sans-serif" font-size="72" font-weight="900" fill="#E63946" stroke="#111" stroke-width="3" letter-spacing="8">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">FALAFEL</textPath>
+  </text>
+
+  <!-- Chef hat -->
+  <g transform="translate(300 220)">
+    <ellipse cx="0" cy="20" rx="55" ry="18" fill="#ffffff" stroke="#111" stroke-width="3"/>
+    <path d="M-55 20 Q -70 -30 -30 -40 Q -20 -75 10 -60 Q 30 -80 50 -50 Q 75 -35 55 20 Z" fill="#ffffff" stroke="#111" stroke-width="3"/>
+    <path d="M-30 -40 Q -25 -30 -15 -35 M 10 -60 Q 15 -50 25 -55 M 30 -80 Q 32 -70 42 -70" stroke="#eaeaea" stroke-width="2" fill="none"/>
   </g>
 
-  <!-- Word mark: BUZZ -->
-  <g font-family="Verdana, 'Trebuchet MS', sans-serif" font-weight="900" font-size="150" fill="url(#letterGrad)" text-anchor="middle">
-    <text x="300" y="200" letter-spacing="6" transform="rotate(-2 300 180)">BUZZ</text>
+  <!-- Falafel mascot face -->
+  <g transform="translate(300 320)">
+    <!-- head -->
+    <circle cx="0" cy="0" r="72" fill="url(#falafel)" stroke="#111" stroke-width="3"/>
+    <!-- bumpy chickpea texture -->
+    <g fill="#8A5A20" opacity="0.7">
+      <circle cx="-30" cy="-25" r="8"/>
+      <circle cx="20" cy="-30" r="6"/>
+      <circle cx="35" cy="10" r="7"/>
+      <circle cx="-40" cy="20" r="6"/>
+      <circle cx="0" cy="35" r="8"/>
+      <circle cx="-10" cy="-10" r="5"/>
+    </g>
+    <!-- eyes -->
+    <g>
+      <circle cx="-22" cy="-10" r="10" fill="#fff" stroke="#111" stroke-width="2"/>
+      <circle cx="22" cy="-10" r="10" fill="#fff" stroke="#111" stroke-width="2"/>
+      <circle cx="-20" cy="-8" r="4" fill="#111"/>
+      <circle cx="24" cy="-8" r="4" fill="#111"/>
+    </g>
+    <!-- smile -->
+    <path d="M-20 15 Q 0 32 20 15" stroke="#111" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- cheeks -->
+    <circle cx="-38" cy="8" r="6" fill="#FF7A9E" opacity="0.7"/>
+    <circle cx="38" cy="8" r="6" fill="#FF7A9E" opacity="0.7"/>
   </g>
 
-  <!-- Little bee dots above the U -->
-  <g fill="#111">
-    <circle cx="235" cy="90" r="4"/>
-    <circle cx="255" cy="82" r="3"/>
-    <circle cx="275" cy="88" r="4"/>
+  <!-- Red neckerchief -->
+  <g transform="translate(300 395)">
+    <path d="M-45 0 L 0 25 L 45 0 L 30 20 L 0 45 L -30 20 Z" fill="url(#ribbon)" stroke="#111" stroke-width="2.5"/>
+    <circle cx="0" cy="10" r="3" fill="#111"/>
   </g>
 
-  <!-- Underline swoosh -->
-  <path d="M170 235 Q 300 265 430 230" stroke="#FF3EA5" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- Bottom ribbon: FELFOUL -->
+  <g transform="translate(300 490)">
+    <path d="M-180 -25 L 180 -25 L 200 0 L 180 25 L -180 25 L -200 0 Z" fill="url(#ribbon)" stroke="#111" stroke-width="3"/>
+    <path d="M-180 25 L -195 40 L -160 25 Z" fill="#7A0F1E" stroke="#111" stroke-width="2"/>
+    <path d="M180 25 L 195 40 L 160 25 Z" fill="#7A0F1E" stroke="#111" stroke-width="2"/>
+    <text x="0" y="12" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-size="60" font-weight="900" fill="#fff" letter-spacing="6" stroke="#111" stroke-width="2">FELFOUL</text>
+  </g>
 
-  <!-- Star sparkles -->
+  <!-- Little side accents -->
+  <g fill="#7ED957">
+    <ellipse cx="120" cy="290" rx="14" ry="8" transform="rotate(-30 120 290)"/>
+    <ellipse cx="480" cy="290" rx="14" ry="8" transform="rotate(30 480 290)"/>
+  </g>
   <g fill="#FFD400">
-    <path d="M140 60 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/>
-    <path d="M470 250 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/>
-    <path d="M60 230 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/>
+    <circle cx="150" cy="200" r="6"/>
+    <circle cx="450" cy="200" r="6"/>
+    <circle cx="100" cy="400" r="5"/>
+    <circle cx="500" cy="400" r="5"/>
   </g>
 </svg>
